@@ -50,10 +50,10 @@
                 <form action="/add_to_cart/{{ product.id }}" method="post">
                     <input type="hidden" name="item_id" value="{{ product.id }}">
                     <div class="container">
-                        <a href="/detailed/{{ product['id'] }}" class="btn btn-outline-warning">ნახვა</a>
+                        <a href="/detailed/{{ product['id'] }}" class="btn btn-warning">ნახვა</a>
                         <form action="/add_to_cart/{{ product.id }}" method="post">
                             <input type="hidden" name="item_id" value="{{ product.id }}">
-                            <button type="submit" class="btn btn-outline-primary mb-2">კალათაში დამატება</button>
+                            <button type="submit" class="btn btn-primary mb-2">კალათაში დამატება</button>
                         </form>
                     </div>
 
@@ -68,3 +68,4 @@
         {% endfor %}
     </div>
     {% endblock %}
+
